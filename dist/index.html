@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FCC: Survey</title>
-    <link rel="stylesheet" href="style.css">    
-</head>
-<body>
-    <h1>Hello World</h1>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>FCC: Survey</title>
+        <link rel="stylesheet" href="style.css">    
+    </head>
+    <body>
+        <h1 id="title">freeCodeCamp</h1>
+        <p id="description">Improve the freeCodeCamp Experience</p>
+        <form action="#" id="survey-form">
+            <label id="name-label">
+                <span>Name:</span>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </label>        
+
+            <label id="email-label"> 
+                <span>Email:</span>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </label>  
+            
+            <label id="number-label">
+                <span>What percentage of the FCC curriculum have you already encountered?</span>
+                <input type="number" id="number" name="knowledge" placeholder="Enter a percentage" min="0" max="100">
+            </label>
+        </form>
+
+        
+    </body>
 </html>
