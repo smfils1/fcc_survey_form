@@ -1,3 +1,35 @@
-html {
-    background-color: lightgray;
+/* Header */
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    margin:0;
 }
+
+header {
+    background-color: #006400;
+    margin: 0;
+    padding:1.5em;
+}
+
+header h1{
+    font-weight: 300;
+}
+
+.fcc-logo{
+    color: white;
+    font-size: 1em;
+}
+
+.flame-logo {
+    font-size: 2em;      
+}
+
+
+.center {
+    display:flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+
+

@@ -5,93 +5,102 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>FCC: Survey</title>
-        <link rel="stylesheet" href="style.css">    
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.1/css/all.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400|Roboto:300&display=swap" rel="stylesheet">
+ 
     </head>
     <body>
-        <h1 id="title">freeCodeCamp</h1>
-        <p id="description">Improve the freeCodeCamp Experience</p>
-        <form action="#" id="survey-form">
-            <label id="name-label">
-                <span>Name:</span>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
-            </label>        
+        <header class="fcc-logo center">
+            <h1 id="title">freeCodeCamp</h1>
+            <i class="fab fa-free-code-camp flame-logo"></i>
 
-            <label id="email-label"> 
-                <span>Email:</span>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            </label>  
-            
-            <label id="number-label">
-                <span>What percentage of the FCC curriculum have you already encountered?</span>
-                <input type="number" id="number" name="knowledge" placeholder="Enter a percentage" min="0" max="100">
-            </label>
+        </header>
+        <main>
+            <p id="description">Improve the freeCodeCamp Experience</p>   
+            <form action="#" id="survey-form">
+                <label id="name-label">
+                    <span>Name:</span>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </label>        
 
-            <label>
-                <span>What are yours reason for learning at FCC?</span>
-                <select  id="dropdown" name="learningReason">
-                    <option value="employment">Employment</option>
-                    <option value="organization" >Organization requirement</option>
-                    <option value="career">Career change</option>
-                    <option value="project">Personal Project</option>
-                    <option value="other">Other</option>              
-                </select>
-            </label>
-    
-            <fieldset>
-                <legend>Would you recommend freeCodeCamp to a friend?</legend>
-                <label>
-                    <span>Yes</span>
-                    <input type="radio" name="recommendation" value="yes">
+                <label id="email-label"> 
+                    <span>Email:</span>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </label>  
+                
+                <label id="number-label">
+                    <span>What percentage of the FCC curriculum have you already encountered?</span>
+                    <input type="number" id="number" name="knowledge" placeholder="Enter a percentage" min="0" max="100">
                 </label>
+
                 <label>
-                    <span>Maybe</span>
-                    <input type="radio" name="recommendation" value="maybe">
+                    <span>What are yours reason for learning at FCC?</span>
+                    <select  id="dropdown" name="learningReason">
+                        <option value="employment">Employment</option>
+                        <option value="organization" >Organization requirement</option>
+                        <option value="career">Career change</option>
+                        <option value="project">Personal Project</option>
+                        <option value="other">Other</option>              
+                    </select>
                 </label>
+        
+                <fieldset>
+                    <legend>Would you recommend freeCodeCamp to a friend?</legend>
+                    <label>
+                        <span>Yes</span>
+                        <input type="radio" name="recommendation" value="yes">
+                    </label>
+                    <label>
+                        <span>Maybe</span>
+                        <input type="radio" name="recommendation" value="maybe">
+                    </label>
+                    <label>
+                        <span>No</span>
+                        <input type="radio" name="recommendation" value="no">
+                    </label>           
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Which other sources you like using to learn to code?</legend>
+                    <label>
+                        <span>None</span>
+                        <input type="checkbox" name="resources" value="none">
+                    </label> 
+                    <label>
+                        <span>Youtube</span>
+                        <input type="checkbox" name="resources" value="youtube">
+                    </label> 
+                    <label>
+                        <span>Udemy</span>
+                        <input type="checkbox" name="resources" value="udemy">
+                    </label> 
+                    <label>
+                        <span>Lynda</span>
+                        <input type="checkbox" name="resources" value="lynda">
+                    </label> 
+                    <label>
+                        <span>Codecacademy</span>
+                        <input type="checkbox" name="resources" value="codecacademy">
+                    </label> 
+                    <label>
+                        <span>Treehouse</span>
+                        <input type="checkbox" name="resources" value="treehouse">
+                    </label> 
+                    <label>
+                        <span>Other</span>
+                        <input type="checkbox" name="resources" value="other">
+                    </label>           
+                </fieldset>
+        
                 <label>
-                    <span>No</span>
-                    <input type="radio" name="recommendation" value="no">
-                </label>           
-            </fieldset>
-    
-            <fieldset>
-                <legend>Which other sources you like using to learn to code?</legend>
-                <label>
-                    <span>None</span>
-                    <input type="checkbox" name="resources" value="none">
-                </label> 
-                <label>
-                    <span>Youtube</span>
-                    <input type="checkbox" name="resources" value="youtube">
-                </label> 
-                <label>
-                    <span>Udemy</span>
-                    <input type="checkbox" name="resources" value="udemy">
-                </label> 
-                <label>
-                    <span>Lynda</span>
-                    <input type="checkbox" name="resources" value="lynda">
-                </label> 
-                <label>
-                    <span>Codecacademy</span>
-                    <input type="checkbox" name="resources" value="codecacademy">
-                </label> 
-                <label>
-                    <span>Treehouse</span>
-                    <input type="checkbox" name="resources" value="treehouse">
-                </label> 
-                <label>
-                    <span>Other</span>
-                    <input type="checkbox" name="resources" value="other">
-                </label>           
-            </fieldset>
-    
-            <label>
-                <span>Give a suggustion to improve FCC</span>
-                <textarea name="suggustion" id="suggustion" cols="30" rows="10" placeholder="Enter a suggestion"></textarea>
-            </label>        
-    
-            <button type="submit" id="submit">Submit</button>
-        </form>
+                    <span>Give a suggustion to improve FCC</span>
+                    <textarea name="suggustion" id="suggustion" cols="30" rows="10" placeholder="Enter a suggestion"></textarea>
+                </label>        
+        
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </main>
 
         
     </body>
