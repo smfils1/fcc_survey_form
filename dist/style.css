@@ -1,7 +1,14 @@
+:root {
+    --green: #006400;
+    --dark-green: #005000;
+    --gray: #dadada;
+  }
+
 /* Header */
 
 body {
     font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
     margin:0;
 }
 
@@ -15,6 +22,7 @@ header h1{
     font-weight: 300;
 }
 
+
 .fcc-logo{
     color: white;
     font-size: 1em;
@@ -24,6 +32,16 @@ header h1{
     font-size: 2em;      
 }
 
+/* Main Content */
+
+.fcc-summary {
+    padding: 0.5em;
+    background-color: var(--gray);
+    color:var(--green);
+    text-align: center;
+    font-size: 1.2em;
+}
+
 
 .center {
     display:flex;
@@ -31,5 +49,23 @@ header h1{
     align-items: center;
 }
 
+.survey{
+    padding: 1.5em;
+    background-color: var(--gray);
+    color:white;
+    font-weight: 300;
+    
+}
 
+#survey-form{
+    display:grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding:1.5em;
+    border-radius: 0.5em;
+    grid-template-rows: 1fr 1fr 2fr 2fr 3fr 3fr 4fr;
+    background-color: var(--dark-green);
+
+}
 
