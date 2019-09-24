@@ -33,12 +33,12 @@
                     </label>  
                     
                     <label id="number-label">
-                        <span>What percentage of the FCC curriculum have you already encountered?</span>
-                        <input type="number" id="number" name="knowledge" placeholder="Enter a percentage" min="0" max="100">
+                        <div>What percentage of the FCC curriculum have you already encountered?</div>
+                        <input type="number" id="number" name="knowledge" placeholder="%" min="0" max="100">
                     </label>
 
-                    <label>
-                        <span>What are yours reason for learning at FCC?</span>
+                    <label id="percent-label">
+                        <div>What are yours reason for learning at FCC?</div>
                         <select  id="dropdown" name="learningReason">
                             <option value="employment">Employment</option>
                             <option value="organization" >Organization requirement</option>
@@ -98,7 +98,7 @@
             
                     <label>
                         <span>Give a suggustion to improve FCC</span>
-                        <textarea name="suggustion" id="suggustion" cols="30" rows="10" placeholder="Enter a suggestion"></textarea>
+                        <textarea name="suggustion" id="suggustion" cols="35" rows="7" placeholder="Enter a suggestion"></textarea>
                     </label>        
             
                     <button type="submit" id="submit">Submit</button>
