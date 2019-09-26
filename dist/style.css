@@ -90,12 +90,16 @@ textarea {
 .mobile {
   display: block;
 }
+header.mobile {
+  display: flex;
+}
 
-.non-mobile {
+.non-mobile,
+header.non-mobile {
   display: none;
 }
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 768px) {
   #survey-form {
     text-align: left;
     grid-gap: 1.5em;
@@ -104,9 +108,15 @@ textarea {
     margin: 0;
   }
 
-  .mobile {
+  .mobile,
+  header.mobile {
     display: none;
   }
+
+  header.non-mobile {
+    display: flex;
+  }
+
   .non-mobile {
     display: block;
   }
@@ -237,5 +247,17 @@ textarea {
     align-self: center;
     justify-self: center;
     padding: 5em 0;
+  }
+
+  #survey-form {
+    position: relative;
+    padding-top: 5em;
+  }
+
+  .fcc-logo {
+    width: 50%;
+    position: absolute;
+    top: -7%;
+    margin-bottom: 1em;
   }
 }
