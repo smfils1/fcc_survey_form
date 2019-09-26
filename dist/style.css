@@ -18,8 +18,15 @@ header {
   padding: 1em;
 }
 
-header h1 {
+#title {
   font-weight: 300;
+  position: relative;
+}
+.flame-logo::after {
+  display: block;
+  font-size: 12px;
+  content: "Survey";
+  position: absolute;
 }
 
 .fcc-logo {
@@ -100,6 +107,10 @@ header.non-mobile {
 }
 
 @media only screen and (min-width: 768px) {
+
+  html{
+    font-size: 18px
+  }
   #survey-form {
     text-align: left;
     grid-gap: 1.5em;
@@ -142,7 +153,7 @@ header.non-mobile {
   #name {
     grid-area: f1In;
     justify-self: start;
-    align-self: start;
+    align-self: center;
   }
 
   #email-label {
@@ -154,7 +165,7 @@ header.non-mobile {
   #email {
     grid-area: f2In;
     justify-self: start;
-    align-self: start;
+    align-self: center;
   }
 
   #number-label {
@@ -166,7 +177,7 @@ header.non-mobile {
   #number {
     grid-area: f3In;
     justify-self: start;
-    align-self: start;
+    align-self: center;
   }
 
   #percent-label {
@@ -178,19 +189,19 @@ header.non-mobile {
   #dropdown {
     grid-area: f4In;
     justify-self: start;
-    align-self: start;
+    align-self: center;
   }
 
   #radio-label {
     grid-area: f5L;
     justify-self: end;
-    align-self: start;
+    align-self: center;
   }
 
   #radio {
     grid-area: f5In;
     justify-self: start;
-    align-self: start;
+    align-self: center;
   }
 
   #checkbox-label {
@@ -202,7 +213,7 @@ header.non-mobile {
   #checkbox {
     grid-area: f6In;
     justify-self: start;
-    align-self: start;
+    align-self: center;
   }
 
   #suggestion-label {
@@ -214,7 +225,7 @@ header.non-mobile {
   #suggestion {
     grid-area: f7In;
     justify-self: start;
-    align-self: start;
+    align-self: center;
   }
 
   #submit {
@@ -260,4 +271,12 @@ header.non-mobile {
     top: -7%;
     margin-bottom: 1em;
   }
+}
+
+@media only screen and (min-width: 1024px) {
+
+  html{
+    font-size: 20px
+  }
+
 }
