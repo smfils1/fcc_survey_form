@@ -217,4 +217,25 @@ textarea {
     display: flex;
     flex-direction: column;
   }
+
+  html,
+  body,
+  main {
+    background-color: var(--gray);
+    height: 100%;
+  }
+
+  main {
+    background-color: var(--gray);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .survey {
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+    padding: 5em 0;
+  }
 }
