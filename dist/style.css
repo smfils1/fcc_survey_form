@@ -4,13 +4,27 @@
   --gray: #dadada;
 }
 
-/* Header */
+/* Devices */
+
+.mobile {
+  display: block;
+}
+header.mobile {
+  display: flex;
+}
+
+.non-mobile,
+header.non-mobile {
+  display: none;
+}
 
 body {
   font-family: "Roboto Mono", monospace;
   font-weight: 400;
   margin: 0;
 }
+
+/* Header */
 
 header {
   background-color: var(--green);
@@ -22,6 +36,7 @@ header {
   font-weight: 300;
   position: relative;
 }
+
 .flame-logo::after {
   display: block;
   font-size: 12px;
@@ -48,6 +63,14 @@ header {
   font-size: 1.2em;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form */
+
 input[type="text"],
 input[type="email"],
 select {
@@ -58,13 +81,7 @@ select {
 
 textarea {
   border-width: 0px;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+} 
 
 .survey {
   padding: 0em 1.5em 1.5em 1.5em;
@@ -94,31 +111,10 @@ textarea {
   color: var(--green);
 }
 
-.mobile {
-  display: block;
-}
-header.mobile {
-  display: flex;
-}
-
-.non-mobile,
-header.non-mobile {
-  display: none;
-}
 
 @media only screen and (min-width: 768px) {
 
-  html{
-    font-size: 18px
-  }
-  #survey-form {
-    text-align: left;
-    grid-gap: 1.5em;
-  }
-  p {
-    margin: 0;
-  }
-
+  /* Devices */
   .mobile,
   header.mobile {
     display: none;
@@ -132,6 +128,41 @@ header.non-mobile {
     display: block;
   }
 
+    /* Header */
+  
+  .fcc-logo {
+    width: 50%;
+    position: absolute;
+    top: -7%;
+    margin-bottom: 1em;
+  }
+
+  /* Main Content */
+  p {
+    margin: 0;
+  }
+
+  html {
+    font-size: 18px;
+  } 
+  
+  
+  html,
+  body,
+  main {
+    background-color: var(--gray);
+    height: 100%;
+  }
+
+  main {
+    background-color: var(--gray);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Form */
+
   #survey-form {
     grid-template-columns: 2fr 4fr 6fr;
     grid-template-areas:
@@ -143,7 +174,10 @@ header.non-mobile {
       ". f6L f6In"
       ". f7L f7In"
       ". . button";
+      text-align: left;
+      grid-gap: 1.5em;
   }
+
   #name-label {
     grid-area: f1L;
     justify-self: end;
@@ -239,20 +273,6 @@ header.non-mobile {
     flex-direction: column;
   }
 
-  html,
-  body,
-  main {
-    background-color: var(--gray);
-    height: 100%;
-  }
-
-  main {
-    background-color: var(--gray);
-    display: grid;
-    justify-content: center;
-    align-items: center;
-  }
-
   .survey {
     width: 80%;
     align-self: center;
@@ -264,19 +284,10 @@ header.non-mobile {
     position: relative;
     padding-top: 5em;
   }
-
-  .fcc-logo {
-    width: 50%;
-    position: absolute;
-    top: -7%;
-    margin-bottom: 1em;
-  }
 }
 
 @media only screen and (min-width: 1024px) {
-
-  html{
-    font-size: 20px
+  html {
+    font-size: 20px;
   }
-
 }
