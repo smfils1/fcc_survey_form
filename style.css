@@ -1,0 +1,293 @@
+:root {
+  --green: #006400;
+  --dark-green: #004600ea;
+  --gray: #dadada;
+}
+
+/* Devices */
+
+.mobile {
+  display: block;
+}
+header.mobile {
+  display: flex;
+}
+
+.non-mobile,
+header.non-mobile {
+  display: none;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Header */
+
+header {
+  background-color: var(--green);
+  margin: 0;
+  padding: 1em;
+}
+
+#title {
+  font-weight: 300;
+  position: relative;
+}
+
+.flame-logo::after {
+  display: block;
+  font-size: 12px;
+  content: "Survey";
+  position: absolute;
+}
+
+.fcc-logo {
+  color: white;
+  font-size: 1em;
+}
+
+.flame-logo {
+  font-size: 2em;
+}
+
+/* Main Content */
+
+.fcc-summary {
+  padding: 1em;
+  background-color: var(--gray);
+  color: var(--green);
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form */
+
+input[type="text"],
+input[type="email"],
+select {
+  border-width: 0px;
+  height: 2em;
+  padding: 0;
+}
+
+textarea {
+  border-width: 0px;
+} 
+
+.survey {
+  padding: 0em 1.5em 1.5em 1.5em;
+  background-color: var(--gray);
+  color: white;
+  font-weight: 300;
+}
+
+#survey-form {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 1em;
+  text-align: center;
+  padding: 1.5em;
+  border-radius: 0.5em;
+  background-color: var(--dark-green);
+}
+
+#submit {
+  border-width: 0px;
+  height: 2.5em;
+  width: 4.5em;
+  padding: 0;
+  border-radius: 5px;
+  font-size: 1em;
+  color: var(--green);
+}
+
+
+@media only screen and (min-width: 768px) {
+
+  /* Devices */
+  .mobile,
+  header.mobile {
+    display: none;
+  }
+
+  header.non-mobile {
+    display: flex;
+  }
+
+  .non-mobile {
+    display: block;
+  }
+
+    /* Header */
+  
+  .fcc-logo {
+    width: 50%;
+    position: absolute;
+    top: -7%;
+    margin-bottom: 1em;
+  }
+
+  /* Main Content */
+  p {
+    margin: 0;
+  }
+
+  html {
+    font-size: 18px;
+  } 
+  
+  
+  html,
+  body,
+  main {
+    background-color: var(--gray);
+    height: 100%;
+  }
+
+  main {
+    background-color: var(--gray);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Form */
+
+  #survey-form {
+    grid-template-columns: 2fr 4fr 6fr;
+    grid-template-areas:
+      ". f1L f1In"
+      ". f2L f2In"
+      ". f3L f3In"
+      ". f4L f4In"
+      ". f5L f5In"
+      ". f6L f6In"
+      ". f7L f7In"
+      ". . button";
+      text-align: left;
+      grid-gap: 1.5em;
+  }
+
+  #name-label {
+    grid-area: f1L;
+    justify-self: end;
+    align-self: start;
+  }
+
+  #name {
+    grid-area: f1In;
+    justify-self: start;
+    align-self: center;
+  }
+
+  #email-label {
+    grid-area: f2L;
+    justify-self: end;
+    align-self: start;
+  }
+
+  #email {
+    grid-area: f2In;
+    justify-self: start;
+    align-self: center;
+  }
+
+  #number-label {
+    grid-area: f3L;
+    justify-self: end;
+    align-self: start;
+  }
+
+  #number {
+    grid-area: f3In;
+    justify-self: start;
+    align-self: center;
+  }
+
+  #percent-label {
+    grid-area: f4L;
+    justify-self: end;
+    align-self: start;
+  }
+
+  #dropdown {
+    grid-area: f4In;
+    justify-self: start;
+    align-self: center;
+  }
+
+  #radio-label {
+    grid-area: f5L;
+    justify-self: end;
+    align-self: center;
+  }
+
+  #radio {
+    grid-area: f5In;
+    justify-self: start;
+    align-self: center;
+  }
+
+  #checkbox-label {
+    grid-area: f6L;
+    justify-self: end;
+    align-self: start;
+  }
+
+  #checkbox {
+    grid-area: f6In;
+    justify-self: start;
+    align-self: center;
+  }
+
+  #suggestion-label {
+    grid-area: f7L;
+    justify-self: end;
+    align-self: start;
+  }
+
+  #suggestion {
+    grid-area: f7In;
+    justify-self: start;
+    align-self: center;
+  }
+
+  #submit {
+    grid-area: button;
+    justify-self: end;
+  }
+
+  #checkbox.non-mobile,
+  #radio.non-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .survey {
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+    padding: 5em 0;
+  }
+
+  #survey-form {
+    position: relative;
+    padding-top: 5em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 20px;
+  }
+}

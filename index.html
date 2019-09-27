@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FCC: Survey</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.1/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400|Roboto:300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="fcc-logo center mobile">
+      <h1 id="title">freeCodeCamp</h1>
+      <i class="fab fa-free-code-camp flame-logo"></i>
+    </header>
+    <main>
+      <div class="fcc-summary mobile">
+        <p id="description">
+          Improve the <br />
+          freeCodeCamp Experience
+        </p>
+      </div>
+      <div class="survey center ">
+        <form action="#" id="survey-form">
+          <header class="fcc-logo center non-mobile">
+            <h1 id="title">freeCodeCamp</h1>
+            <i class="fab fa-free-code-camp flame-logo"></i>
+          </header>
+          <label id="name-label" class="mobile">
+            <span>*Name:</span>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </label>
+          <label id="name-label" for="name" class="non-mobile">*Name:</label>
+          <input
+            type="text"
+            id="name"
+            class="non-mobile"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+          <label id="email-label" class="mobile">
+            <span>*Email:</span>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </label>
+          <label for="email" id="email-label" class="non-mobile">*Email:</label>
+          <input
+            type="email"
+            id="email"
+            class="non-mobile"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <label for="number" id="number-label"
+            >What percentage of the FCC curriculum have you already
+            encountered?</label
+          >
+          <input
+            type="number"
+            id="number"
+            name="knowledge"
+            placeholder="%"
+            min="0"
+            max="100"
+          />
+
+          <label for="dropdown" id="percent-label"
+            >What is your reason for learning at FCC?</label
+          >
+          <select id="dropdown" name="learningReason">
+            <option value="employment">Employment</option>
+            <option value="organization">Organization requirement</option>
+            <option value="career">Career change</option>
+            <option value="project">Personal Project</option>
+            <option value="other">Other</option>
+          </select>
+
+          <fieldset class="mobile">
+            <legend>Would you recommend freeCodeCamp to a friend?</legend>
+            <label>
+              <span>Yes</span>
+              <input type="radio" name="recommendation" value="yes" />
+            </label>
+            <label>
+              <span>Maybe</span>
+              <input type="radio" name="recommendation" value="maybe" />
+            </label>
+            <label>
+              <span>No</span>
+              <input type="radio" name="recommendation" value="no" />
+            </label>
+          </fieldset>
+
+          <p id="radio-label" class="non-mobile">
+            Would you recommend freeCodeCamp to a friend?
+          </p>
+          <div id="radio" class="non-mobile">
+            <label>
+              <input type="radio" name="recommendation" value="yes" />
+              <span>Yes</span></label
+            >
+            <label>
+              <input type="radio" name="recommendation" value="maybe" />
+              <span>Maybe</span></label
+            >
+            <label>
+              <input type="radio" name="recommendation" value="no" />
+              <span>No</span></label
+            >
+          </div>
+
+          <fieldset class="mobile">
+            <legend>
+              Which other sources you like using to learn to code?
+            </legend>
+            <label>
+              <span>None</span>
+              <input type="checkbox" name="resources" value="none" />
+            </label>
+            <label>
+              <span>Youtube</span>
+              <input type="checkbox" name="resources" value="youtube" />
+            </label>
+            <label>
+              <span>Udemy</span>
+              <input type="checkbox" name="resources" value="udemy" />
+            </label>
+            <label>
+              <span>Lynda</span>
+              <input type="checkbox" name="resources" value="lynda" />
+            </label>
+            <label>
+              <span>Codecacademy</span>
+              <input type="checkbox" name="resources" value="codecacademy" />
+            </label>
+            <label>
+              <span>Treehouse</span>
+              <input type="checkbox" name="resources" value="treehouse" />
+            </label>
+            <label>
+              <span>Other</span>
+              <input type="checkbox" name="resources" value="other" />
+            </label>
+          </fieldset>
+
+          <p id="checkbox-label" class="non-mobile">
+            Which other sources you like using to learn to code?
+          </p>
+          <div id="checkbox" class="non-mobile">
+            <label>
+              <input type="checkbox" name="resources" value="none" />
+              <span>None</span>
+            </label>
+            <label>
+              <input type="checkbox" name="resources" value="youtube" />
+              <span>Youtube</span>
+            </label>
+            <label>
+              <input type="checkbox" name="resources" value="udemy" />
+              <span>Udemy</span>
+            </label>
+            <label>
+              <input type="checkbox" name="resources" value="lynda" />
+              <span>Lynda</span>
+            </label>
+            <label>
+              <input type="checkbox" name="resources" value="codecacademy" />
+              <span>Codecacademy</span>
+            </label>
+            <label>
+              <input type="checkbox" name="resources" value="treehouse" />
+              <span>Treehouse</span></label
+            >
+            <label>
+              <input type="checkbox" name="resources" value="other" />
+              <span>Other</span></label
+            >
+          </div>
+
+          <label id="suggestion-label">Give a suggestion to improve FCC</label>
+          <textarea
+            name="suggestion"
+            id="suggestion"
+            cols="35"
+            rows="7"
+            placeholder="Enter a suggestion"
+          ></textarea>
+
+          <button type="submit" id="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
