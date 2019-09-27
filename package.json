@@ -4,13 +4,15 @@
   "description": "FCC: Survey Form",
   "main": "server.js",
   "scripts": {
-    "start":"nodemon dist/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon dist/server.js",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Samuel Fils",
   "license": "ISC",
+  "homepage": "https://smfils1.github.io/fcc_survey_form",
   "dependencies": {
     "express": "^4.17.1",
+    "gh-pages": "^2.1.1",
     "nodemon": "^1.19.2"
   }
 }
