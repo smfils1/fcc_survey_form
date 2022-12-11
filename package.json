@@ -11,7 +11,7 @@
   "license": "ISC",
   "homepage": "https://smfils1.github.io/fcc_survey_form",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "gh-pages": "^2.1.1",
     "nodemon": "^1.19.2"
   }
